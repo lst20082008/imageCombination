@@ -69,7 +69,7 @@ class Windows(Frame):
         self.outputLabel.configure(image=self.outputTkImg)
 
     def FindSavePath(self):
-        self.outputPath.set(filedialog.asksaveasfilename())
+        self.outputPath.set(filedialog.asksaveasfilename(defaultextension=".png"))
 
     def SaveImg(self):
         try:
